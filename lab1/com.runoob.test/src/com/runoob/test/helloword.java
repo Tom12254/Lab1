@@ -3,6 +3,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+//CC
 public class helloword {
 	static BufferedReader keyboard = new
 			BufferedReader(new InputStreamReader(System.in));
