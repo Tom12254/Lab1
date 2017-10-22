@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 //CC
-public class helloword {
+public class Helloword {
 	static BufferedReader keyboard = new
 			BufferedReader(new InputStreamReader(System.in));
     public static void main(String []args) throws IOException,
@@ -19,7 +19,7 @@ public class helloword {
     
     	do {
     		tokenizer += inFile.readLine();
-    		}
+    	}
     	while(inFile.ready());
     	
     	String dic[]=tokenizer.replaceAll("[\\u4e00-\\u9fa5]", "").split("\\W+");
@@ -180,7 +180,8 @@ public class helloword {
             }
         }
     }
-    public static void Conjunction_connect(String word1,String word2,String[] newdic,int[][] Edgedata)
+    public static void Conjunction_connect(String word1,
+    		String word2,String[] newdic,int[][] Edgedata)
     {
     	int location1=-1,location2=-1;
         for(int i=0;i<newdic.length;i++)
@@ -214,6 +215,7 @@ public class helloword {
             }
         }
     }
+    
     public static void generateNewText(String[] In_text,String[] newdic,int[][] Edgedata)
     {
     	for(int i=0;i<In_text.length-1;i++)
@@ -223,6 +225,7 @@ public class helloword {
         }
        System.out.print(In_text[In_text.length-1]);
     }
+    
     static void calcShortestPath(String a,String b,String []newdic,int [][]Edgedata)
     {
    	 int m=-1,n=-1;
@@ -319,8 +322,7 @@ public class helloword {
     }
 
 
- static void randomWal(int i,int Edgedata[][],String []newdic)throws IOException 
-    {
+ static void randomWal(int i,int Edgedata[][],String []newdic)throws IOException {
 	 System.out.print("Input your choice(Y/N):");
 	 String choice = keyboard.readLine();
    	 String s="";
@@ -394,11 +396,9 @@ public class helloword {
    	}catch (Exception e) {  
         e.printStackTrace();  
     }  
- 	
-   	 
-	   
     }  	
 }
+
 class  GraphViz{
     private String runPath = "";
     private String dotPath = ""; 
